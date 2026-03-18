@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attack Papers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body data-page="attacks" data-section="attacks">
+    <header id="site-header"></header>
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow" id="page-eyebrow"></p>
+        <h1 id="page-title"></h1>
+        <p class="lead" id="page-description"></p>
+        <div class="hero-inline-nav" id="attack-category-nav"></div>
+      </section>
+
+      <section class="filter-shell">
+        <div class="filter-field">
+          <label for="search-input">Search papers</label>
+          <input id="search-input" type="search" placeholder="Search by title, institution, or publication" />
+        </div>
+        <div class="filter-field">
+          <label for="publication-filter">Publication</label>
+          <select id="publication-filter">
+            <option value="">All publications</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="sort-filter">Sort by time</label>
+          <select id="sort-filter">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="section-block compact">
+        <div id="attack-sections"></div>
+        <div class="empty-state hidden" id="empty-state">
+          No papers match the current filters.
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script type="module" src="./assets/js/attacks.js"></script>
+  </body>
+</html>

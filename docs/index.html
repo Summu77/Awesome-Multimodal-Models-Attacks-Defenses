@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimodal Attack & Defense Papers</title>
+    <meta
+      name="description"
+      content="A curated academic website for multimodal attack, defense, evaluation, and survey papers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body data-page="home">
+    <header id="site-header"></header>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Academic Paper Index</p>
+          <h1>Multimodal Attacks, Defenses, Evaluations, and Surveys</h1>
+          <p class="lead">
+            For any questions or collaboration, please contact
+            <a href="mailto:whusanmu@gmail.com">whusanmu@gmail.com</a>.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./attacks.html">Browse Attacks</a>
+            <a class="button button-secondary" href="./defenses.html">Browse Defenses</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/Summu77/Awesome-MLLMs-Attacks-Defenses"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="panel-label">Collection Focus</p>
+          <ul class="panel-list">
+            <li>Clean, academic visual language</li>
+            <li>Separate pages for each research block</li>
+            <li>Simple paper schema for fast maintenance</li>
+          </ul>
+          <div class="stats-grid" id="hero-stats"></div>
+        </aside>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Sections</p>
+            <h2>Research blocks</h2>
+          </div>
+          <p class="section-note">
+            The site is organized by topic so you can expand each block
+            independently.
+          </p>
+        </div>
+        <div class="section-grid" id="section-grid"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">2026 Snapshot</p>
+            <h2>Share of 2026 papers by direction</h2>
+          </div>
+          <p class="section-note" id="year-share-note"></p>
+        </div>
+        <div class="section-grid" id="year-share-grid"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured Papers</p>
+            <h2>Selected entries from the current seed set</h2>
+          </div>
+          <p class="section-note">
+            These cards are rendered from modular data files under
+            <code>docs/assets/js/data/</code>.
+          </p>
+        </div>
+        <div class="paper-grid" id="featured-grid"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Expansion Guide</p>
+            <h2>How this site stays lightweight</h2>
+          </div>
+          <p class="section-note">
+            Every future paper only needs five fields: title, institutions,
+            publication, publishedAt, and link.
+          </p>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card">
+            <h3>Modular data</h3>
+            <p>
+              Each topic has its own data file, so adding new papers does not
+              touch the rest of the site.
+            </p>
+          </article>
+          <article class="principle-card">
+            <h3>Pure static deployment</h3>
+            <p>
+              No build step is required. GitHub Pages can publish the
+              <code>docs/</code> directory directly.
+            </p>
+          </article>
+          <article class="principle-card">
+            <h3>Reusable rendering</h3>
+            <p>
+              Shared styles and listing scripts keep the structure consistent
+              across all pages.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer"></footer>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
