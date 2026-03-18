@@ -1,6 +1,8 @@
 import { adversarialAttacks } from "./attacks/adversarial.js";
 import { jailbreakAttacks } from "./attacks/jailbreak.js";
 import { backdoorAttacks } from "./attacks/backdoor.js";
+import { membershipInferenceAttacks } from "./attacks/membership-inference.js";
+import { modelExtractionAttacks } from "./attacks/model-extraction.js";
 import { otherAttacks } from "./attacks/other.js";
 
 export const attackCategoryMeta = {
@@ -21,6 +23,18 @@ export const attackCategoryMeta = {
     shortTitle: "Backdoor",
     description:
       "Training-time or fine-tuning-time attacks that implant hidden malicious behaviors."
+  },
+  membershipInference: {
+    title: "Membership Inference Attacks",
+    shortTitle: "Membership",
+    description:
+      "Attacks that infer whether specific data points were used in training a target model."
+  },
+  modelExtraction: {
+    title: "Model Extraction Attacks",
+    shortTitle: "Extraction",
+    description:
+      "Attacks that recover target model behavior, structure, or decision rules through queries."
   },
   other: {
     title: "Other Attacks",
@@ -45,6 +59,16 @@ export const attackGroups = [
     key: "backdoor",
     ...attackCategoryMeta.backdoor,
     papers: backdoorAttacks
+  },
+  {
+    key: "membershipInference",
+    ...attackCategoryMeta.membershipInference,
+    papers: membershipInferenceAttacks
+  },
+  {
+    key: "modelExtraction",
+    ...attackCategoryMeta.modelExtraction,
+    papers: modelExtractionAttacks
   },
   {
     key: "other",

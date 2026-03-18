@@ -14,6 +14,7 @@ The site is published from `docs/` and is intentionally lightweight:
 - `docs/attacks.html`: attack papers
 - `docs/defenses.html`: defense papers
 - `docs/evaluations.html`: benchmarks and evaluation papers
+- `docs/analysis.html`: analysis papers
 - `docs/surveys.html`: surveys and meta studies
 - `docs/assets/js/index.js`: homepage metrics and yearly share view
 - `docs/assets/js/attacks.js`: grouped renderer for the attack page
@@ -38,7 +39,7 @@ Defense papers are further split into four subcategories:
 
 ## Paper schema
 
-Each paper entry uses only five fields:
+Each paper entry uses six fields:
 
 ```js
 {
@@ -46,11 +47,13 @@ Each paper entry uses only five fields:
   institutions: ["Institution A", "Institution B"],
   publication: "Conference / Journal / arXiv + year",
   publishedAt: "YYYY-MM or YYYY-MM-DD",
+  Tag: ["Tag A", "Tag B"],
   link: "https://..."
 }
 ```
 
 Every page reads paper cards from these standalone data files. The page templates do not store paper content directly.
+`Tag` is optional in practice and may be an empty array `[]`; the site hides empty tags automatically.
 For compatibility, the site also accepts a single `institution` string, but `institutions` is the preferred format for new entries.
 
 ## Add new papers

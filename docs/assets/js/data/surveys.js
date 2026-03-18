@@ -1,23 +1,18 @@
 export const surveys = [
-  {
-    title: "A Survey of Safety on Large Vision-Language Models: Attacks, Defenses and Evaluations",
-    institution: "Multi-institution collaboration",
-    publication: "arXiv 2025",
-    publishedAt: "2025-02",
-    link: "https://arxiv.org/abs/2502.09039"
-  },
-  {
-    title: "MMJ-Bench: A Comprehensive Study on Jailbreak Attacks and Defenses for Multimodal Large Language Models",
-    institution: "Multi-institution collaboration",
-    publication: "arXiv 2025",
-    publishedAt: "2025-02",
-    link: "https://arxiv.org/abs/2502.11777"
-  },
-  {
-    title: "Red Teaming Visual Language Models",
-    institution: "Multi-institution collaboration",
-    publication: "arXiv 2024",
-    publishedAt: "2024-11",
-    link: "https://arxiv.org/abs/2411.12915"
-  }
+{
+  title: "Safety at scale: A comprehensive survey of large model and agent safety",
+  institutions: ["Fudan University"],
+  publication: "FTPS 2026",
+  publishedAt: "2025-02",
+  Tag: [],
+  link: "https://www.emerald.com/ftsec/article/8/3-4/1/1335095"
+},
+{
+  title: "A Survey of Attacks on Large Vision-Language Models: Resources, Advances, and Future Trends",
+  institutions: ["Peking University"],
+  publication: "TNNLS 2025",
+  publishedAt: "2024-07",
+  Tag: [],
+  link: "https://ieeexplore.ieee.org/abstract/document/11127221/"
+},
 ];

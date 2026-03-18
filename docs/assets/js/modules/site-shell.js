@@ -3,6 +3,7 @@ const navigation = [
   { key: "attacks", label: "Attacks", href: "./attacks.html" },
   { key: "defenses", label: "Defenses", href: "./defenses.html" },
   { key: "evaluations", label: "Evaluations", href: "./evaluations.html" },
+  { key: "analysis", label: "Analysis", href: "./analysis.html" },
   { key: "surveys", label: "Surveys", href: "./surveys.html" }
 ];
 

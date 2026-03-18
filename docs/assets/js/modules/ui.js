@@ -4,7 +4,18 @@ export function createPaperCard(paper, sectionLabel = "", extraClassName = "") {
     : `<span class="paper-badge">Paper</span>`;
   const cardClassName = ["paper-card", extraClassName].filter(Boolean).join(" ");
   const institutions = getInstitutions(paper);
+  const tags = getTags(paper);
   const institutionLabel = institutions.length > 1 ? "Institutions" : "Institution";
+  const tagBlock = tags.length
+    ? `
+        <div class="paper-tag-group">
+          <span class="paper-tag-label">Tags</span>
+          <div class="paper-tags">
+            ${tags.map((tag) => `<span class="paper-tag">${tag}</span>`).join("")}
+          </div>
+        </div>
+      `
+    : "";
 
   return `
     <article class="${cardClassName}">
@@ -16,6 +27,7 @@ export function createPaperCard(paper, sectionLabel = "", extraClassName = "") {
         <h3 class="paper-title">${paper.title}</h3>
         <p class="paper-institution"><strong>${institutionLabel}:</strong> ${institutions.join("; ")}</p>
         <p class="paper-meta"><strong>Published:</strong> ${formatPublishedAt(paper.publishedAt)}</p>
+        ${tagBlock}
       </div>
       <div class="paper-actions">
         <a class="paper-link paper-button" href="${paper.link}" target="_blank" rel="noreferrer">
@@ -31,7 +43,7 @@ export function createPaperTable(papers, sectionLabel = "") {
     return "";
   }
 
-  const showType = Boolean(sectionLabel);
+  const showTags = papers.some((paper) => getTags(paper).length > 0);
 
   return `
     <div class="paper-table-shell">
@@ -42,12 +54,14 @@ export function createPaperTable(papers, sectionLabel = "") {
             <th>Institutions</th>
             <th>Published</th>
             <th>Publication</th>
-            ${showType ? "<th>Type</th>" : ""}
+            ${showTags ? "<th>Tags</th>" : ""}
             <th>Link</th>
           </tr>
         </thead>
         <tbody>
-          ${papers.map((paper) => createPaperTableRow(paper, sectionLabel)).join("")}
+          ${papers
+            .map((paper) => createPaperTableRow(paper, sectionLabel, "", { showTags }))
+            .join("")}
         </tbody>
       </table>
     </div>
@@ -206,24 +220,32 @@ export function uniquePublications(items) {
     .sort((a, b) => a.localeCompare(b));
 }
 
-export function filterPapers(items, searchText, publication) {
+export function uniqueTags(items) {
+  return [...new Set(items.flatMap((item) => getTags(item)).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b));
+}
+
+export function filterPapers(items, searchText, publication, tag = "") {
   const query = searchText.trim().toLowerCase();
 
   return items.filter((paper) => {
     const matchesPublication = publication
       ? publicationCategory(paper.publication) === publication
       : true;
+    const matchesTag = tag ? getTags(paper).includes(tag) : true;
     const institutionText = getInstitutions(paper).join(" ");
+    const tagText = getTags(paper).join(" ");
     const haystack = [
       paper.title,
       institutionText,
+      tagText,
       paper.publication,
       paper.publishedAt
     ]
       .join(" ")
       .toLowerCase();
     const matchesQuery = query ? haystack.includes(query) : true;
-    return matchesPublication && matchesQuery;
+    return matchesPublication && matchesTag && matchesQuery;
   });
 }
 
@@ -276,11 +298,45 @@ function getInstitutions(paper) {
   return ["Unknown"];
 }
 
-function createPaperTableRow(paper, sectionLabel = "", extraClassName = "") {
+function getTags(paper) {
+  if (Array.isArray(paper.Tag)) {
+    return paper.Tag.filter(Boolean).map((item) => String(item).trim()).filter(Boolean);
+  }
+
+  if (Array.isArray(paper.tag)) {
+    return paper.tag.filter(Boolean).map((item) => String(item).trim()).filter(Boolean);
+  }
+
+  if (Array.isArray(paper.tags)) {
+    return paper.tags.filter(Boolean).map((item) => String(item).trim()).filter(Boolean);
+  }
+
+  if (typeof paper.Tag === "string" && paper.Tag.trim()) {
+    return [paper.Tag.trim()];
+  }
+
+  if (typeof paper.tag === "string" && paper.tag.trim()) {
+    return [paper.tag.trim()];
+  }
+
+  if (typeof paper.tags === "string" && paper.tags.trim()) {
+    return [paper.tags.trim()];
+  }
+
+  return [];
+}
+
+function createPaperTableRow(paper, sectionLabel = "", extraClassName = "", options = {}) {
   const institutions = getInstitutions(paper);
+  const tags = getTags(paper);
+  const { showTags = false } = options;
   const rowClassName = ["paper-row", extraClassName].filter(Boolean).join(" ");
-  const typeCell = sectionLabel
-    ? `<td class="paper-table-type"><span class="paper-badge table-badge">${sectionLabel}</span></td>`
+  const tagCell = showTags
+    ? `
+        <td class="paper-table-tags">
+          ${tags.length ? tags.map((tag) => `<span class="paper-tag table-tag">${tag}</span>`).join("") : ""}
+        </td>
+      `
     : "";
 
   return `
@@ -289,7 +345,7 @@ function createPaperTableRow(paper, sectionLabel = "", extraClassName = "") {
       <td>${institutions.join("; ")}</td>
       <td>${formatPublishedAt(paper.publishedAt)}</td>
       <td>${paper.publication}</td>
-      ${typeCell}
+      ${tagCell}
       <td>
         <a class="paper-table-link" href="${paper.link}" target="_blank" rel="noreferrer">Open</a>
       </td>
@@ -309,7 +365,7 @@ function renderCardBucketContent(visiblePapers, hiddenPapers, sectionLabel) {
 }
 
 function renderTableBucketContent(visiblePapers, hiddenPapers, sectionLabel) {
-  const showType = Boolean(sectionLabel);
+  const showTags = [...visiblePapers, ...hiddenPapers].some((paper) => getTags(paper).length > 0);
 
   return `
     <div class="paper-table-shell">
@@ -320,14 +376,18 @@ function renderTableBucketContent(visiblePapers, hiddenPapers, sectionLabel) {
             <th>Institutions</th>
             <th>Published</th>
             <th>Publication</th>
-            ${showType ? "<th>Type</th>" : ""}
+            ${showTags ? "<th>Tags</th>" : ""}
             <th>Link</th>
           </tr>
         </thead>
         <tbody>
-          ${visiblePapers.map((paper) => createPaperTableRow(paper, sectionLabel)).join("")}
+          ${visiblePapers
+            .map((paper) => createPaperTableRow(paper, sectionLabel, "", { showTags }))
+            .join("")}
           ${hiddenPapers
-            .map((paper) => createPaperTableRow(paper, sectionLabel, "paper-row-collapsed"))
+            .map((paper) =>
+              createPaperTableRow(paper, sectionLabel, "paper-row-collapsed", { showTags })
+            )
             .join("")}
         </tbody>
       </table>

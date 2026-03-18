@@ -4,6 +4,7 @@ export const otherDefenses = [
     institution: "Nanyang Technological University, Singapore and collaborators",
     publication: "arXiv 2024",
     publishedAt: "2024-06",
+    Tag: [],
     link: "https://arxiv.org/abs/2406.13838"
   }
 ];

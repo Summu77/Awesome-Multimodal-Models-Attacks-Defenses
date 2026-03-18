@@ -1,9 +1,18 @@
 export const adversarialAttacks = [
 {
+  title: "Anyattack: Towards large-scale self-supervised adversarial attacks on vision-language models",
+  institutions: ["Hong Kong University of Science and Technology"],
+  publication: "CVPR 2025",
+  publishedAt: "2024-10",
+  Tag: ["Black-box"],
+  link: "https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Anyattack_Towards_Large-scale_Self-supervised_Adversarial_Attacks_on_Vision-language_Models_CVPR_2025_paper.html"
+},
+{
   title: "V-Attack: Targeting Disentangled Value Features for Controllable Adversarial Attacks on LVLMs",
   institution: ["Institute of Computing Technology"],
   publication: "CVPR 2026",
   publishedAt: "2025-11",
+  Tag: ["Black-box"],
   link: "https://arxiv.org/abs/2511.20223",
 },
 {
@@ -11,6 +20,7 @@ export const adversarialAttacks = [
   institution: ["MBZUAI"],
   publication: "NeurIPS 2025",
   publishedAt: "2025-03",
+  Tag: [],
   link: "https://vila-lab.github.io/M-Attack-Website",
 },
 {
@@ -18,6 +28,7 @@ export const adversarialAttacks = [
   institution: ["Nanyang Technological University"],
   publication: "NeurIPS 2025",
   publishedAt: "2025-05",
+  Tag: [],
   link: "https://arxiv.org/abs/2505.21494",
 },
 {
@@ -25,6 +36,7 @@ title: "Towards Building Model/Prompt-Transferable Attackers against Large Visio
 institutions: ["Huazhong University of Science and Technology"],
 publication: "NeurIPS 2025",
 publishedAt: "2025-09",
+Tag: [],
 link: "https://openreview.net/forum?id=TyW1V1KukG"
 },
 {
@@ -32,6 +44,7 @@ title: "PA-Attack: Guiding Gray-Box Attacks on LVLM Vision Encoders with Prototy
 institutions: ["City University of Hong Kong"],
 publication: "CVPR 2026",
 publishedAt: "2026-02",
+Tag: [],
 link: "https://arxiv.org/abs/2602.19418"
 },
 {
@@ -39,6 +52,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["Huazhong University of Science and Technology"],
   publication: "NeurIPS 2025",
   publishedAt: "2025-09",
+  Tag: [],
   link: "https://openreview.net/forum?id=kn0AyMYw0v"
 },
 {
@@ -46,6 +60,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["The University of Melbourne"],
   publication: "ICML 2025",
   publishedAt: "2025-05",
+  Tag: ['UAP'],
   link: "https://arxiv.org/abs/2505.05528"
 },
 {
@@ -53,6 +68,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["Huazhong University of Science and Technology"],
   publication: "ICASSP 2025",
   publishedAt: "2025-03",
+  Tag: [],
   link: "https://ieeexplore.ieee.org/abstract/document/10890065/"
 },
 {
@@ -60,6 +76,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["The Pennsylvania State University"],
   publication: "EMNLP 2025",
   publishedAt: "2025-09",
+  Tag: [],
   link: "https://aclanthology.org/2025.emnlp-main.901/"
 },
 {
@@ -67,6 +84,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["Singapore University of Technology and Design"],
   publication: "NeurIPS 2023",
   publishedAt: "2023-05",
+  Tag: [],
   link: "https://arxiv.org/abs/2305.16934"
 },
 {
@@ -74,6 +92,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["The Pennsylvania State University"],
   publication: "NeurIPS 2023",
   publishedAt: "2023-12",
+  Tag: [],
   link: "https://arxiv.org/abs/2312.03777"
 },
 {
@@ -81,6 +100,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["University of Oxford"],
   publication: "ICLR 2024",
   publishedAt: "2024-01",
+  Tag: [],
   link: "https://arxiv.org/abs/2401.11170"
 },
 {
@@ -88,6 +108,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["Southeast University"],
   publication: "S&P 2024",
   publishedAt: "2024-01",
+  Tag: [],
   link: "https://www.computer.org/csdl/proceedings-article/sp/2024/313000a102/1Ub239H4xyg"
 },
 {
@@ -95,6 +116,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["University of Central Florida"],
   publication: "CVPR 2024",
   publishedAt: "2024-01",
+  Tag: [],
   link: "http://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Exploring_the_Transferability_of_Visual_Prompting_for_Multimodal_Large_Language_CVPR_2024_paper.html"
 },
 {
@@ -102,6 +124,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["University of Science and Technology of China"],
   publication: "MM 2024",
   publishedAt: "2024-10",
+  Tag: [],
   link: "https://arxiv.org/abs/2410.06699"
 },
 {
@@ -109,6 +132,7 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["Peking University"],
   publication: "NeurIPS 2024",
   publishedAt: "2024-09",
+  Tag: [],
   link: "https://openreview.net/forum?id=gDpWYpocE1"
 },
 {
@@ -116,8 +140,16 @@ link: "https://arxiv.org/abs/2602.19418"
   institutions: ["City University of Hong Kong"],
   publication: "ICLR 2026",
   publishedAt: "2025-05",
+  Tag: [],
   link: "https://arxiv.org/abs/2505.17440"
 },
-
+{
+  title: "AdvEDM: Fine-grained Adversarial Attack against VLM-based Embodied Agents",
+  institutions: ["Huazhong University of Science and Technology"],
+  publication: "NeurIPS 2025",
+  publishedAt: "2025-09",
+  Tag: ["VLA"],
+  link: "https://openreview.net/forum?id=jmLCBLeEC4"
+},
 
 ];

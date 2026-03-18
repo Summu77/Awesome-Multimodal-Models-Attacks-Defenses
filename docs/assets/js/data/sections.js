@@ -20,6 +20,13 @@ export const sectionMeta = {
     description:
       "Benchmarks, robustness audits, and trustworthiness measurements for multimodal systems."
   },
+  analysis: {
+    page: "analysis.html",
+    eyebrow: "Analytical Studies",
+    title: "Analysis",
+    description:
+      "Analytical papers that study failure modes, mechanisms, or broader patterns in MLLM safety."
+  },
   surveys: {
     page: "surveys.html",
     eyebrow: "Meta Research",
@@ -29,4 +36,4 @@ export const sectionMeta = {
   }
 };
 
-export const orderedSections = ["attacks", "defenses", "evaluations", "surveys"];
+export const orderedSections = ["attacks", "defenses", "evaluations", "analysis", "surveys"];

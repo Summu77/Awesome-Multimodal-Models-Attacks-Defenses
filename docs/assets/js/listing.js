@@ -7,6 +7,7 @@ import {
   initExpandablePaperGroups,
   isPreprintPaper,
   renderExpandableBuckets,
+  uniqueTags,
   uniquePublications,
   uniqueYears
 } from "./modules/ui.js";
@@ -24,20 +25,26 @@ document.querySelector("#page-title").textContent = meta.title;
 document.querySelector("#page-description").remove();
 
 const publicationFilter = document.querySelector("#publication-filter");
+const tagFilter = document.querySelector("#tag-filter");
 const sortFilter = document.querySelector("#sort-filter");
-const viewFilter = document.querySelector("#view-filter");
+const viewToggle = document.querySelector("#view-toggle");
 const searchInput = document.querySelector("#search-input");
 const paperGrid = document.querySelector("#paper-grid");
 const emptyState = document.querySelector("#empty-state");
 const viewStorageKey = `paper-view:${section}`;
+let viewMode = localStorage.getItem(viewStorageKey) || "cards";
 
 paperGrid.classList.remove("paper-grid");
 paperGrid.classList.add("paper-bucket-stack");
 
-viewFilter.value = localStorage.getItem(viewStorageKey) || "cards";
+syncViewToggle();
 
 publicationFilter.innerHTML += uniquePublications(papers)
   .map((publication) => `<option value="${publication}">${publication}</option>`)
+  .join("");
+
+tagFilter.innerHTML += uniqueTags(papers)
+  .map((tag) => `<option value="${tag}">${tag}</option>`)
   .join("");
 
 sortFilter.innerHTML += uniqueYears(papers)
@@ -45,11 +52,11 @@ sortFilter.innerHTML += uniqueYears(papers)
   .join("");
 
 function renderList() {
-  const viewMode = viewFilter.value;
   const filtered = filterPapers(
     papers,
     searchInput.value,
-    publicationFilter.value
+    publicationFilter.value,
+    tagFilter.value
   );
   const sorted = applyTimeMode(filtered, sortFilter.value);
 
@@ -76,11 +83,33 @@ function renderPaperBuckets(items, viewMode) {
   return renderExpandableBuckets(buckets, { limit: 10, viewMode });
 }
 
+function toggleViewMode() {
+  viewMode = viewMode === "cards" ? "table" : "cards";
+  localStorage.setItem(viewStorageKey, viewMode);
+  syncViewToggle();
+  renderList();
+}
+
+function syncViewToggle() {
+  const currentLabel = viewMode === "cards" ? "Cards" : "Table";
+  const nextLabel = viewMode === "cards" ? "Table" : "Cards";
+  viewToggle.innerHTML = `
+    <span class="view-toggle-kicker">Current view</span>
+    <span class="view-toggle-mode">${currentLabel}</span>
+    <span class="view-toggle-hint">Switch to ${nextLabel} view</span>
+  `;
+  viewToggle.setAttribute("aria-pressed", String(viewMode === "table"));
+  viewToggle.dataset.viewMode = viewMode;
+  viewToggle.dataset.nextView = nextLabel.toLowerCase();
+  viewToggle.setAttribute(
+    "aria-label",
+    viewMode === "cards" ? "Switch to table view" : "Switch to card view"
+  );
+}
+
 searchInput.addEventListener("input", renderList);
 publicationFilter.addEventListener("change", renderList);
+tagFilter.addEventListener("change", renderList);
 sortFilter.addEventListener("change", renderList);
-viewFilter.addEventListener("change", () => {
-  localStorage.setItem(viewStorageKey, viewFilter.value);
-  renderList();
-});
+viewToggle.addEventListener("click", toggleViewMode);
 renderList();

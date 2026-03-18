@@ -1,9 +1,10 @@
 export const adversarialDefenses = [
-  {
-    title: "Eyes Closed, Safety On: Protecting Multimodal LLMs via Image-to-Text Transformation",
-    institution: "University of Maryland, College Park and collaborators",
-    publication: "arXiv 2024",
-    publishedAt: "2024-03",
-    link: "https://arxiv.org/abs/2403.09572"
-  }
+{
+  title: "Robust SuperAlignment: Weak-to-Strong Robustness Generalization for Vision-Language Models",
+  institutions: ["Nanyang Technological University"],
+  publication: "NeurIPS 2025",
+  publishedAt: "2025-09",
+  Tag: [],
+  link: "https://openreview.net/forum?id=rOR5IZcwJx"
+},
 ];

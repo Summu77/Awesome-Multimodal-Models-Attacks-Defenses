@@ -4,6 +4,7 @@ export const jailbreakAttacks = [
   institutions: ["Google DeepMind"],
   publication: "NeurIPS 2023",
   publishedAt: "2023-06",
+  Tag: [],
   link: "https://arxiv.org/abs/2306.15447"
 },
 {
@@ -11,6 +12,7 @@ export const jailbreakAttacks = [
   institutions: ["Princeton University"],
   publication: "AAAI 2024",
   publishedAt: "2023-06",
+  Tag: [],
   link: "https://arxiv.org/abs/2306.13213"
 },
 {
@@ -18,6 +20,7 @@ export const jailbreakAttacks = [
   institutions: ["University of California"],
   publication: "ICLR 2024",
   publishedAt: "2023-07",
+  Tag: [],
   link: "https://arxiv.org/abs/2307.14539"
 },
 {
@@ -25,6 +28,7 @@ export const jailbreakAttacks = [
   institutions: ["Sea AI Lab"],
   publication: "ICML 2024",
   publishedAt: "2024-02",
+  Tag: [],
   link: "https://arxiv.org/abs/2402.08567"
 },
 {
@@ -32,6 +36,7 @@ export const jailbreakAttacks = [
   institutions: ["The Chinese University of Hong Kong"],
   publication: "AAAI 2025",
   publishedAt: "2024-12",
+  Tag: [],
   link: "https://arxiv.org/abs/2412.17544"
 },
 {
@@ -39,6 +44,7 @@ export const jailbreakAttacks = [
   institutions: ["Institute of Information Engineering"],
   publication: "ACL 2025",
   publishedAt: "2025-07",
+  Tag: [],
   link: "https://aclanthology.org/2025.acl-long.475/"
 },
 ];

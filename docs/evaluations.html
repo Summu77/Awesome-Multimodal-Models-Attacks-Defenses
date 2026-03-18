@@ -16,15 +16,24 @@
     <header id="site-header"></header>
     <main class="page-shell">
       <section class="page-hero">
-        <p class="eyebrow" id="page-eyebrow"></p>
-        <h1 id="page-title"></h1>
-        <p class="lead" id="page-description"></p>
+        <div class="page-hero-top">
+          <div>
+            <p class="eyebrow" id="page-eyebrow"></p>
+            <h1 id="page-title"></h1>
+            <p class="lead" id="page-description"></p>
+          </div>
+          <div class="hero-view-control filter-field">
+            <button id="view-toggle" class="view-toggle" type="button" aria-pressed="false">
+              Card view
+            </button>
+          </div>
+        </div>
       </section>
 
       <section class="filter-shell">
         <div class="filter-field">
           <label for="search-input">Search papers</label>
-          <input id="search-input" type="search" placeholder="Search by title, institution, or publication" />
+          <input id="search-input" type="search" placeholder="Search by title, institution, publication, or tag" />
         </div>
         <div class="filter-field">
           <label for="publication-filter">Publication</label>
@@ -33,17 +42,16 @@
           </select>
         </div>
         <div class="filter-field">
+          <label for="tag-filter">Tag</label>
+          <select id="tag-filter">
+            <option value="">All tags</option>
+          </select>
+        </div>
+        <div class="filter-field">
           <label for="sort-filter">Sort by time</label>
           <select id="sort-filter">
             <option value="newest">Newest first</option>
             <option value="oldest">Oldest first</option>
-          </select>
-        </div>
-        <div class="filter-field">
-          <label for="view-filter">View</label>
-          <select id="view-filter">
-            <option value="cards">Card view</option>
-            <option value="table">Table view</option>
           </select>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import { adversarialDefenses } from "./defenses/adversarial.js";
 import { jailbreakDefenses } from "./defenses/jailbreak.js";
 import { backdoorDefenses } from "./defenses/backdoor.js";
+import { modelExtractionDefenses } from "./defenses/model-extraction.js";
 import { otherDefenses } from "./defenses/other.js";
 
 export const defenseCategoryMeta = {
@@ -21,6 +22,12 @@ export const defenseCategoryMeta = {
     shortTitle: "Backdoor",
     description:
       "Detection and mitigation strategies for hidden malicious behaviors injected during training or fine-tuning."
+  },
+  modelExtraction: {
+    title: "Model Extraction Defenses",
+    shortTitle: "Extraction",
+    description:
+      "Protective methods that limit leakage, copying, or reconstruction of target model behavior."
   },
   other: {
     title: "Other Defenses",
@@ -45,6 +52,11 @@ export const defenseGroups = [
     key: "backdoor",
     ...defenseCategoryMeta.backdoor,
     papers: backdoorDefenses
+  },
+  {
+    key: "modelExtraction",
+    ...defenseCategoryMeta.modelExtraction,
+    papers: modelExtractionDefenses
   },
   {
     key: "other",
