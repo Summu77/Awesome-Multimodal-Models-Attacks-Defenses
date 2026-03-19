@@ -52,7 +52,7 @@ export const jailbreakAttacks = [
   institutions: ["Tsinghua University","Zhongguancun Laboratory","Shandong Institute of Blockchain","Shandong University"],
   publication: "AAAI 2025",
   publishedAt: "2023-11",
-  Tag: ["Typographic/OCR-based","Single Image"],
+  Tag: ["Typographic/OCR-based","Single Image Modal"],
   link: "https://arxiv.org/abs/2311.05608"
 },
 {
@@ -60,7 +60,7 @@ export const jailbreakAttacks = [
   institutions: ["Zhipu AI","Tsinghua University","Beihang University"],
   publication: "ACM MM 2025",
   publishedAt: "2025-08",
-  Tag: ["Adversarial Perturbation","Image & Text"],
+  Tag: ["Adversarial Perturbation","Image & Text Modal"],
   link: "https://arxiv.org/abs/2508.05087"
 },
 
