@@ -52,7 +52,7 @@ export const jailbreakAttacks = [
   institutions: ["Tsinghua University","Zhongguancun Laboratory","Shandong Institute of Blockchain","Shandong University"],
   publication: "AAAI 2025",
   publishedAt: "2023-11",
-  Tag: ["Typographic/OCR-based"],
+  Tag: ["Typographic/OCR-based","Image modality"],
   link: "https://arxiv.org/abs/2311.05608"
 },
 
