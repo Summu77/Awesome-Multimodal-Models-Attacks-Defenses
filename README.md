@@ -1,10 +1,10 @@
-# Awesome-MLLMs-Attacks-Defenses
+# Awesome-Multimodal-Models-Attacks-Defenses
 
 An academic GitHub Pages website for curated multimodal attack, defense, evaluation, and survey papers.
 
 This project is still under active development. We welcome collaboration, feedback, and issue reports.
 
-Website: https://summu77.github.io/Awesome-MLLMs-Attacks-Defenses/
+Website: https://summu77.github.io/Awesome-Multimodal-Models-Attacks-Defenses/
 
 ## Website structure
 
