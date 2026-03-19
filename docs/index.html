@@ -73,6 +73,115 @@
       <section class="section-block">
         <div class="section-heading">
           <div>
+            <p class="eyebrow">Institution Overview</p>
+            <h2>Institution Distribution</h2>
+          </div>
+          <p class="section-note">
+            Choose one direction to view its institution pie chart.
+          </p>
+        </div>
+        <div class="institution-module">
+          <div class="filter-shell institution-filter-shell">
+            <div class="filter-field">
+              <label for="institution-primary-select">Research block</label>
+              <select id="institution-primary-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="institution-secondary-select">Direction</label>
+              <select id="institution-secondary-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="institution-status-select">Publication status</label>
+              <select id="institution-status-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="institution-year-select">Year</label>
+              <select id="institution-year-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="institution-tag-select">Tag</label>
+              <select id="institution-tag-select"></select>
+            </div>
+          </div>
+          <div class="institution-panel">
+            <div class="institution-chart-panel">
+              <div class="institution-chart-shell">
+                <div class="institution-pie" id="institution-pie" aria-hidden="true"></div>
+                <div class="institution-pie-center">
+                  <span class="institution-pie-kicker" id="institution-current-label">Adversarial Attacks</span>
+                  <strong class="institution-pie-value" id="institution-total">0</strong>
+                  <span class="institution-pie-meta">Affiliation mentions</span>
+                </div>
+              </div>
+            </div>
+            <div class="institution-legend-panel">
+              <div class="institution-legend-head">
+                <h3 id="institution-legend-title">Adversarial Attacks</h3>
+                <p id="institution-legend-note">
+                  Top institutions ranked by affiliation mentions in the selected direction.
+                </p>
+              </div>
+              <div class="institution-legend-grid" id="institution-legend"></div>
+              <div class="empty-state hidden" id="institution-empty-state">
+                No institution data is available for the current direction yet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Keyword Overview</p>
+            <h2>Title Word Cloud</h2>
+          </div>
+          <p class="section-note">
+            A lightweight word cloud generated only from paper titles.
+          </p>
+        </div>
+        <div class="wordcloud-module">
+          <div class="filter-shell institution-filter-shell">
+            <div class="filter-field">
+              <label for="wordcloud-primary-select">Research block</label>
+              <select id="wordcloud-primary-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="wordcloud-secondary-select">Direction</label>
+              <select id="wordcloud-secondary-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="wordcloud-status-select">Publication status</label>
+              <select id="wordcloud-status-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="wordcloud-year-select">Year</label>
+              <select id="wordcloud-year-select"></select>
+            </div>
+            <div class="filter-field">
+              <label for="wordcloud-tag-select">Tag</label>
+              <select id="wordcloud-tag-select"></select>
+            </div>
+          </div>
+          <div class="wordcloud-panel">
+            <div class="wordcloud-head">
+              <div>
+                <h3 id="wordcloud-title">Adversarial Attacks · All · All years</h3>
+                <p id="wordcloud-note">Top keywords extracted from current paper titles.</p>
+              </div>
+              <span class="section-count" id="wordcloud-paper-count">0 papers</span>
+            </div>
+            <div class="wordcloud-canvas" id="wordcloud-canvas"></div>
+            <div class="empty-state hidden" id="wordcloud-empty-state">
+              No title keywords are available for the current selection yet.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div>
             <p class="eyebrow">Latest Papers</p>
             <h2>Latest 10 papers</h2>
           </div>

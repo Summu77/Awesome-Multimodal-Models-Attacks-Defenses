@@ -271,4 +271,12 @@ link: "https://arxiv.org/abs/2602.19418"
   Tag: [],
   link: "https://www.sciencedirect.com/science/article/abs/pii/S0031320326001597"
 },
+{
+  title: "Gradient Pruning Interactive Attack for Vision-Language Pre-Training Models",
+  institutions: ["Nanjing University of Science and Technology"],
+  publication: "TDSC 2026",
+  publishedAt: "2025-10",
+  Tag: [],
+  link: "https://ieeexplore.ieee.org/abstract/document/11217326"
+},
 ];

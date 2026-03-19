@@ -12,15 +12,32 @@ export const adversarialDefenses = [
   institutions: ["University of Auckland"],
   publication: "NeurIPS 2025",
   publishedAt: "2025-09",
-  Tag: ["VLP"],
+  Tag: ["VLP","Training-Time"],
   link: "https://openreview.net/forum?id=7G9YKty2UZ"
 },
 {
-  title: "Gradient Pruning Interactive Attack for Vision-Language Pre-Training Models",
-  institutions: ["Nanjing University of Science and Technology"],
-  publication: "TDSC 2026",
-  publishedAt: "2025-10",
-  Tag: [],
-  link: "https://ieeexplore.ieee.org/abstract/document/11217326"
+  title: "Understanding zero-shot adversarial robustness for large-scale models",
+  institutions: ["Columbia University"],
+  publication: "ICLR 2023",
+  publishedAt: "2022-12",
+  Tag: ["VLP","Training-Time"],
+  link: "https://arxiv.org/abs/2212.07016"
 },
+{
+  title: "Pre-trained Model Guided Fine-Tuning for Zero-Shot Adversarial Robustness",
+  institutions: ["Institute of Computing Technology"],
+  publication: "CVPR 2024",
+  publishedAt: "2024-01",
+  Tag: ["VLP","Training-Time"],
+  link: "http://openaccess.thecvf.com/content/CVPR2024/html/Wang_Pre-trained_Model_Guided_Fine-Tuning_for_Zero-Shot_Adversarial_Robustness_CVPR_2024_paper.html"
+},
+{
+  title: "Revisiting adversarial training at scale",
+  institutions: ["UC Santa Cruz"],
+  publication: "CVPR 2024",
+  publishedAt: "2024-01",
+  Tag: ["VLP","Training-Time"],
+  link: "https://arxiv.org/abs/2401.04727"
+},
+
 ];

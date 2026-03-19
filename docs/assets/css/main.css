@@ -446,6 +446,217 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
+.institution-module {
+  display: grid;
+  gap: 1rem;
+}
+
+.wordcloud-module {
+  display: grid;
+  gap: 1rem;
+}
+
+.filter-shell.institution-filter-shell {
+  grid-template-columns: repeat(5, minmax(0, calc((100% - 2.6rem) / 5)));
+  gap: 0.65rem;
+  margin-top: 0;
+}
+
+.filter-shell.institution-filter-shell .filter-field {
+  min-width: 0;
+}
+
+.filter-shell.institution-filter-shell .filter-field select,
+.filter-shell.institution-filter-shell .filter-field input {
+  min-width: 0;
+}
+
+.institution-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1.08fr);
+  gap: 1.2rem;
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(31, 43, 60, 0.08);
+  box-shadow: 0 16px 34px rgba(31, 43, 60, 0.08);
+}
+
+.wordcloud-panel {
+  display: grid;
+  gap: 1rem;
+  padding: 1.4rem;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(31, 43, 60, 0.08);
+  box-shadow: 0 16px 34px rgba(31, 43, 60, 0.08);
+}
+
+.institution-chart-panel,
+.institution-legend-panel {
+  border-radius: calc(var(--radius-md) + 2px);
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid rgba(31, 43, 60, 0.06);
+  padding: 1.25rem;
+}
+
+.institution-chart-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.institution-chart-shell {
+  width: min(100%, 320px);
+  aspect-ratio: 1;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.institution-pie {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(rgba(31, 43, 60, 0.12) 0deg 360deg);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 24px 38px rgba(31, 43, 60, 0.12);
+}
+
+.institution-pie-center {
+  position: absolute;
+  inset: 22%;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(255, 251, 245, 0.98), rgba(245, 238, 228, 0.96));
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(31, 43, 60, 0.06);
+}
+
+.institution-pie-kicker {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.institution-pie-value {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 0.9;
+  color: var(--accent-2);
+}
+
+.institution-pie-meta {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.institution-legend-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.institution-legend-head p {
+  margin: 0;
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+.institution-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1rem;
+}
+
+.institution-legend-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  min-height: 56px;
+  padding: 0.8rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(31, 43, 60, 0.06);
+}
+
+.institution-legend-dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 0.3rem;
+  border-radius: 50%;
+  flex: 0 0 12px;
+}
+
+.institution-legend-copy {
+  min-width: 0;
+  display: grid;
+  gap: 0.16rem;
+}
+
+.institution-legend-copy strong {
+  font-size: 0.94rem;
+  line-height: 1.25;
+  word-break: break-word;
+}
+
+.institution-legend-copy span {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.wordcloud-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.wordcloud-head p {
+  margin: 0.3rem 0 0;
+  color: var(--ink-soft);
+}
+
+.wordcloud-canvas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem 0.85rem;
+  min-height: 220px;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(circle at top left, rgba(143, 79, 45, 0.08), transparent 24%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(247, 240, 229, 0.72));
+  border: 1px solid rgba(31, 43, 60, 0.06);
+}
+
+.wordcloud-term {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(31, 43, 60, 0.08);
+  color: var(--word-color);
+  font-size: var(--word-size);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  opacity: var(--word-opacity);
+  box-shadow: 0 12px 22px rgba(31, 43, 60, 0.06);
+}
+
 .subsection-block + .subsection-block {
   margin-top: 2rem;
 }
@@ -963,7 +1174,25 @@ h3 {
 
   .paper-grid,
   .section-grid,
-  .principle-grid {
+  .principle-grid,
+  .institution-legend-grid {
     grid-template-columns: 1fr;
+  }
+
+  .institution-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .institution-chart-shell {
+    width: min(100%, 280px);
+  }
+
+  .institution-legend-head {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .institution-legend-head p {
+    text-align: left;
   }
 }
