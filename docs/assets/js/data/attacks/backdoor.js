@@ -2,7 +2,7 @@ export const backdoorAttacks = [
   {
     title: "POISONING AND BACKDOORING CONTRASTIVE LEARNING",
     institution: "Google",
-    publication: "arXiv",
+    publication: "arXiv 2021",
     publishedAt: "2021-06",
     Tag: [],
     link: "https://arxiv.org/abs/2106.09667v2"
@@ -10,7 +10,7 @@ export const backdoorAttacks = [
   {
     title: "BadEncoder: Backdoor Attacks to Pre-trained Encoders in Self-Supervised Learning",
     institution: "Duke University",
-    publication: "SSP'22",
+    publication: "SSP 2022",
     publishedAt: "2021-07",
     Tag: [],
     link: "https://ieeexplore.ieee.org/document/9833644"
@@ -18,7 +18,7 @@ export const backdoorAttacks = [
   {
     title: "Data Poisoning Attacks Against Multimodal Encoders",
     institution: "CISPA Helmholtz Center for Information Security",
-    publication: "ICML'23",
+    publication: "ICML 2023",
     publishedAt: "2022-09",
     Tag: [],
     link: "https://proceedings.mlr.press/v202/yang23f.html"
@@ -26,7 +26,7 @@ export const backdoorAttacks = [
   {
     title: "GhostEncoder: Stealthy backdoor attacks with dynamic triggers to pre-trained encoders in self-supervised learning",
     institution: "Nanjing University of Aeronautics and Astronautics",
-    publication: "CS'24",
+    publication: "CS 2024",
     publishedAt: "2023-10",
     Tag: [],
     link: "https://www.sciencedirect.com/science/article/abs/pii/S0167404824001561"
@@ -34,7 +34,7 @@ export const backdoorAttacks = [
   {
     title: "BadCLIP: Dual-Embedding Guided Backdoor Attack on Multimodal Contrastive Learning",
     institution: "National University of Singapore",
-    publication: "CVPR'24",
+    publication: "CVPR 2024",
     publishedAt: "2023-11",
     Tag: [],
     link: "https://openaccess.thecvf.com/content/CVPR2024/html/Liang_BadCLIP_Dual-Embedding_Guided_Backdoor_Attack_on_Multimodal_Contrastive_Learning_CVPR_2024_paper.html"
@@ -42,7 +42,7 @@ export const backdoorAttacks = [
   {
     title: "Distribution Preserving Backdoor Attack in Self-supervised Learning",
     institution: "Purdue University",
-    publication: "SSP'24",
+    publication: "SSP 2024",
     publishedAt: "2024-05",
     Tag: [],
     link: "https://ieeexplore.ieee.org/abstract/document/10646825"
@@ -50,7 +50,7 @@ export const backdoorAttacks = [
   {
     title: "BAPLe: Backdoor Attacks on Medical Foundational Models using Prompt Learning",
     institution: "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
-    publication: "MICCAI'24",
+    publication: "MICCAI 2024",
     publishedAt: "2024-08",
     Tag: [],
     link: "https://papers.miccai.org/miccai-2024/094-Paper3117.html"
@@ -58,7 +58,7 @@ export const backdoorAttacks = [
   {
     title: "MP-Nav: Enhancing Data Poisoning Attacks against Multimodal Learning",
     institution: "New York University",
-    publication: "ICML'25",
+    publication: "ICML 2025",
     publishedAt: "2025-03",
     Tag: [],
     link: "https://openreview.net/forum?id=zy7VeNtSLM"
@@ -66,7 +66,7 @@ export const backdoorAttacks = [
   {
     title: "Backdooring CLIP through Concept Confusion",
     institution: "King Abdullah University of Science and Technology (KAUST)",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-03",
     Tag: [],
     link: "https://arxiv.org/abs/2503.09095"
@@ -74,7 +74,7 @@ export const backdoorAttacks = [
   {
     title: "Invisible Backdoor Attack against Self-supervised Learning",
     institution: "Zhejiang University",
-    publication: "CVPR'25",
+    publication: "CVPR 2025",
     publishedAt: "2025-10",
     Tag: [],
     link: "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Invisible_Backdoor_Attack_against_Self-supervised_Learning_CVPR_2025_paper.pdf"
@@ -82,7 +82,7 @@ export const backdoorAttacks = [
   {
     title: "Backdoor in Seconds: Unlocking Vulnerabilities in Large Pre-trained Models via Model Editing",
     institution: "University of Virginia",
-    publication: "CIKM'25",
+    publication: "CIKM 2025",
     publishedAt: "2025-11",
     Tag: [],
     link: "https://dl.acm.org/doi/10.1145/3746252.3761408"
@@ -90,7 +90,7 @@ export const backdoorAttacks = [
   {
     title: "ToxicTextCLIP: Text-Based Poisoning and Backdoor Attacks on CLIP Pre-training",
     institution: "Central South University",
-    publication: "NeurIPS'25",
+    publication: "NeurIPS 2025",
     publishedAt: "2025-11",
     Tag: [],
     link: "https://arxiv.org/pdf/2511.00446"
@@ -98,7 +98,7 @@ export const backdoorAttacks = [
   {
     title: "Backdoor Attacks on Multi-modal Contrastive Learning",
     institution: "",
-    publication: "arXiv",
+    publication: "arXiv 2026",
     publishedAt: "2026-01",
     Tag: [],
     link: "https://www.arxiv.org/abs/2601.11006"
@@ -114,7 +114,7 @@ export const backdoorAttacks = [
   {
     title: "BadCLIP++: Stealthy and Persistent Backdoors in Multimodal Contrastive Learning",
     institution: "Nanyang Technological University",
-    publication: "arXiv",
+    publication: "arXiv 2026",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://arxiv.org/pdf/2602.17168"
@@ -122,7 +122,7 @@ export const backdoorAttacks = [
   {
     title: "Rickrolling the Artist: Injecting Backdoors into Text Encoders for Text-to-Image Synthesis",
     institution: "Technical University of Darmstadt",
-    publication: "ICCV'23",
+    publication: "ICCV 2023",
     publishedAt: "2022-11",
     Tag: [],
     link: "https://arxiv.org/abs/2211.02408"
@@ -130,7 +130,7 @@ export const backdoorAttacks = [
   {
     title: "Personalization as a Shortcut for Few-Shot Backdoor Attack against Text-to-Image Diffusion Models",
     institution: "Nanyang Technological University",
-    publication: "AAAI'24",
+    publication: "AAAI 2024",
     publishedAt: "2023-05",
     Tag: [],
     link: "https://arxiv.org/abs/2305.10701"
@@ -138,7 +138,7 @@ export const backdoorAttacks = [
   {
     title: "Text-to-Image Diffusion Models can be Easily Backdoored through Multimodal Data Poisoning",
     institution: "Tsinghua University",
-    publication: "ACM MM'23",
+    publication: "ACM MM 2023",
     publishedAt: "2023-05",
     Tag: [],
     link: "https://arxiv.org/abs/2305.04175"
@@ -146,7 +146,7 @@ export const backdoorAttacks = [
   {
     title: "VillanDiffusion: A Unified Backdoor Attack Framework for Diffusion Models",
     institution: "The Chinese University of Hong Kong",
-    publication: "NeurIPS'23",
+    publication: "NeurIPS 2023",
     publishedAt: "2023-06",
     Tag: [],
     link: "https://arxiv.org/abs/2306.06874"
@@ -154,7 +154,7 @@ export const backdoorAttacks = [
   {
     title: "BAGM: A Backdoor Attack for Manipulating Text-to-Image Generative Models",
     institution: "The University of Western Australia",
-    publication: "TIFS'24",
+    publication: "TIFS 2024",
     publishedAt: "2023-07",
     Tag: [],
     link: "https://arxiv.org/abs/2307.16489"
@@ -162,7 +162,7 @@ export const backdoorAttacks = [
   {
     title: "Backdooring Textual Inversion for Concept Censorship",
     institution: "Tsinghua University",
-    publication: "arXiv",
+    publication: "arXiv 2023",
     publishedAt: "2023-08",
     Tag: [],
     link: "https://arxiv.org/abs/2308.10718"
@@ -170,7 +170,7 @@ export const backdoorAttacks = [
   {
     title: "Nightshade: Prompt-Specific Poisoning Attacks on Text-to-Image Generative Models",
     institution: "University of Chicago",
-    publication: "S&P'24",
+    publication: "S&P 2024",
     publishedAt: "2023-10",
     Tag: [],
     link: "https://arxiv.org/abs/2310.13828"
@@ -178,7 +178,7 @@ export const backdoorAttacks = [
   {
     title: "The Stronger the Diffusion Model, the Easier the Backdoor: Data Poisoning to Induce Copyright Breaches Without Adjusting Finetuning Pipeline",
     institution: "National University of Singapore",
-    publication: "ICML'24",
+    publication: "ICML 2024",
     publishedAt: "2024-01",
     Tag: [],
     link: "https://arxiv.org/abs/2401.04136"
@@ -186,7 +186,7 @@ export const backdoorAttacks = [
   {
     title: "Injecting Bias in Text-To-Image Models via Composite-Trigger Backdoors",
     institution: "University of Massachusetts Amherst",
-    publication: "arXiv",
+    publication: "arXiv 2024",
     publishedAt: "2024-06",
     Tag: [],
     link: "https://arxiv.org/abs/2406.15213"
@@ -194,7 +194,7 @@ export const backdoorAttacks = [
   {
     title: "Control ControlNet: Multidimensional Backdoor Attack Based on ControlNet",
     institution: "Zhejiang University",
-    publication: "ICONIP'24",
+    publication: "ICONIP 2024",
     publishedAt: "2024-07",
     Tag: [],
     link: "https://easychair.org/publications/preprint/L1B4"
@@ -202,7 +202,7 @@ export const backdoorAttacks = [
   {
     title: "EvilEdit: Backdooring Text-to-Image Diffusion Models in One Second",
     institution: "Nanyang Technological University",
-    publication: "ACM MM'24",
+    publication: "ACM MM 2024",
     publishedAt: "2024-10",
     Tag: [],
     link: "https://dl.acm.org/doi/10.1145/3664647.3680689"
@@ -210,7 +210,7 @@ export const backdoorAttacks = [
   {
     title: "Combinational Backdoor Attack against Customized Text-to-Image Models",
     institution: "University of Electronic Science and Technology of China",
-    publication: "arXiv",
+    publication: "arXiv 2024",
     publishedAt: "2024-11",
     Tag: [],
     link: "https://arxiv.org/abs/2411.12389"
@@ -218,7 +218,7 @@ export const backdoorAttacks = [
   {
     title: "TrojanEdit: Backdooring Text-Based Image Editing Models",
     institution: "University of Electronic Science and Technology of China",
-    publication: "arXiv",
+    publication: "arXiv 2024",
     publishedAt: "2024-11",
     Tag: [],
     link: "https://arxiv.org/abs/2411.14681"
@@ -226,7 +226,7 @@ export const backdoorAttacks = [
   {
     title: "Imperceptible Backdoor Attacks on Text-Guided 3D Scene Grounding",
     institution: "Peking University",
-    publication: "TMM'25",
+    publication: "TMM 2025",
     publishedAt: "2025-02",
     Tag: [],
     link: "https://dblp.org/rec/journals/tmm/LiuH25"
@@ -234,7 +234,7 @@ export const backdoorAttacks = [
   {
     title: "Towards Invisible Backdoor Attack on Text-to-Image Diffusion Model",
     institution: "Institute of Computing Technology, Chinese Academy of Sciences",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-03",
     Tag: [],
     link: "https://arxiv.org/abs/2503.17724"
@@ -242,7 +242,7 @@ export const backdoorAttacks = [
   {
     title: "Silent Branding Attack: Trigger-free Data Poisoning Attack on Text-to-Image Diffusion Models",
     institution: "KAIST",
-    publication: "CVPR'25",
+    publication: "CVPR 2025",
     publishedAt: "2025-03",
     Tag: [],
     link: "https://arxiv.org/abs/2503.09669"
@@ -250,7 +250,7 @@ export const backdoorAttacks = [
   {
     title: "BadVideo: Stealthy Backdoor Attack against Text-to-Video Generation",
     institution: "The Chinese University of Hong Kong",
-    publication: "ICCV'25",
+    publication: "ICCV 2025",
     publishedAt: "2025-04",
     Tag: [],
     link: "https://arxiv.org/abs/2504.16907"
@@ -258,7 +258,7 @@ export const backdoorAttacks = [
   {
     title: "Erased but Not Forgotten: How Backdoors Compromise Concept Erasure",
     institution: "Technical University of Darmstadt",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-04",
     Tag: [],
     link: "https://arxiv.org/abs/2504.21072"
@@ -266,7 +266,7 @@ export const backdoorAttacks = [
   {
     title: "REDEditing: Relationship-Driven Precise Backdoor Poisoning on Text-to-Image Diffusion Models",
     institution: "National University of Singapore",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-04",
     Tag: [],
     link: "https://arxiv.org/abs/2504.14554"
@@ -274,7 +274,7 @@ export const backdoorAttacks = [
   {
     title: "TWIST: Text-encoder Weight-editing for Inserting Secret Trojans in Text-to-Image Models",
     institution: "Zhejiang University",
-    publication: "ACL'25",
+    publication: "ACL 2025",
     publishedAt: "2025-06",
     Tag: [],
     link: "https://aclanthology.org/2025.acl-long.541/"
@@ -282,7 +282,7 @@ export const backdoorAttacks = [
   {
     title: "Practical, Generalizable and Robust Backdoor Attacks on Text-to-Image Diffusion Models",
     institution: "llinois Institute of Technology",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-08",
     Tag: [],
     link: "https://arxiv.org/abs/2508.01605"
@@ -290,7 +290,7 @@ export const backdoorAttacks = [
   {
     title: "BadBlocks: Low-Cost and Stealthy Backdoor Attacks Tailored for Text-to-Image Diffusion Models",
     institution: "Shanghai Development Center of Computer Software Technology",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-08",
     Tag: [],
     link: "https://arxiv.org/abs/2508.03221"
@@ -306,7 +306,7 @@ export const backdoorAttacks = [
   {
     title: "Bad-PoseDiff: Pose-Guided Backdoor Triggering in Diffusion Models",
     institution: "",
-    publication: "TrustCom'25",
+    publication: "TrustCom 2025",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://ieeexplore.ieee.org/abstract/document/11354876"
@@ -314,7 +314,7 @@ export const backdoorAttacks = [
   {
     title: "Semantic-level Backdoor Attack against Text-to-Image Diffusion Models",
     institution: "Fudan University",
-    publication: "arXiv'26",
+    publication: "arXiv 2026",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://arxiv.org/pdf/2602.04898"
@@ -322,7 +322,7 @@ export const backdoorAttacks = [
   {
     title: "When Backdoors Go Beyond Triggers: Semantic Drift in Diffusion Models Under Encoder Attacks",
     institution: "Google",
-    publication: "arXiv'26",
+    publication: "arXiv 2026",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://arxiv.org/pdf/2602.20193"
@@ -330,7 +330,7 @@ export const backdoorAttacks = [
   {
     title: "When LoRA Betrays: Backdooring Text-to-Image Models by Masquerading as Benign Adapters",
     institution: "People’s Public Security University of China",
-    publication: "CVPR'26",
+    publication: "CVPR 2026",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://arxiv.org/pdf/2602.21977"
@@ -338,7 +338,7 @@ export const backdoorAttacks = [
   {
     title: "Tuning Just Enough: Lightweight Backdoor Attacks on Multi-Encoder Diffusion Models",
     institution: "TU Darmstadt",
-    publication: "ICLRW'26",
+    publication: "ICLRW 2026",
     publishedAt: "2026-03",
     Tag: [],
     link: "https://arxiv.org/pdf/2603.04064"
@@ -346,7 +346,7 @@ export const backdoorAttacks = [
   {
     title: "Shadowcast: Stealthy Data Poisoning Attacks against Vision-Language Models",
     institution: "University of Maryland",
-    publication: "NeurIPS'24",
+    publication: "NeurIPS 2024",
     publishedAt: "2024-02",
     Tag: [],
     link: "https://openreview.net/forum?id=JhqyeppMiD"
@@ -354,7 +354,7 @@ export const backdoorAttacks = [
   {
     title: "VL-Trojan: Multimodal Instruction Backdoor Attacks against Autoregressive Visual Language Models",
     institution: "Southeast University",
-    publication: "IJCV'25",
+    publication: "IJCV 2025",
     publishedAt: "2024-02",
     Tag: [],
     link: "https://link.springer.com/article/10.1007/s11263-025-02368-9"
@@ -362,7 +362,7 @@ export const backdoorAttacks = [
   {
     title: "Test-Time BACKDOOR ATTACKS ON MULTIMODAL LARGE LANGUAGE MODELS",
     institution: "Sea AI Lab",
-    publication: "arXiv",
+    publication: "arXiv 2024",
     publishedAt: "2024-02",
     Tag: [],
     link: "https://github.com/sail-sg/AnyDoor"
@@ -370,7 +370,7 @@ export const backdoorAttacks = [
   {
     title: "ImgTrojan: Jailbreaking Vision-Language Models with ONE Image",
     institution: "The University of Hong Kong",
-    publication: "NAACL'25",
+    publication: "NAACL 2025",
     publishedAt: "2024-03",
     Tag: [],
     link: "https://aclanthology.org/2025.naacl-long.360/"
@@ -378,7 +378,7 @@ export const backdoorAttacks = [
   {
     title: "TrojVLM: Backdoor Attack Against Vision Language Models",
     institution: "Stony Brook University",
-    publication: "ECCV'24",
+    publication: "ECCV 2024",
     publishedAt: "2024-03",
     Tag: [],
     link: "https://link.springer.com/chapter/10.1007/978-3-031-73650-6_27"
@@ -386,7 +386,7 @@ export const backdoorAttacks = [
   {
     title: "PHYSICAL BACKDOOR ATTACK CAN JEOPARDIZE DRIVING WITH VISION-LARGE-LANGUAGE MODELS",
     institution: "Shanghai Jiao Tong University",
-    publication: "ICMLW'24",
+    publication: "ICMLW 2024",
     publishedAt: "2024-04",
     Tag: [],
     link: "https://icml.cc/virtual/2024/38112"
@@ -394,7 +394,7 @@ export const backdoorAttacks = [
   {
     title: "Revisiting Backdoor Attacks against Large Vision-Language Models from Domain Shift",
     institution: "National University of Singapore",
-    publication: "CVPR'25",
+    publication: "CVPR 2025",
     publishedAt: "2024-06",
     Tag: [],
     link: "https://www.computer.org/csdl/proceedings-article/cvpr/2025/436400j477/2999SblAZlC"
@@ -402,7 +402,7 @@ export const backdoorAttacks = [
   {
     title: "BACKDOORING VISION-LANGUAGE MODELS WITH OUT-OF-DISTRIBUTION DATA",
     institution: "Stony Brook University",
-    publication: "ICLR'25",
+    publication: "ICLR 2025",
     publishedAt: "2024-10",
     Tag: [],
     link: "https://openreview.net/forum?id=tZozeR3VV7"
@@ -410,7 +410,7 @@ export const backdoorAttacks = [
   {
     title: "Stealthy Backdoor Attack in Self-Supervised Learning Vision Encoders for Large Vision Language Models",
     institution: "University of Illinois Urbana-Champaign (UIUC)",
-    publication: "CVPR'25",
+    publication: "CVPR 2025",
     publishedAt: "2025-02",
     Tag: [],
     link: "https://ieeexplore.ieee.org/document/11092582"
@@ -418,7 +418,7 @@ export const backdoorAttacks = [
   {
     title: "BadToken: Token-level Backdoor Attacks to Multi-modal Large Language Models",
     institution: "Duke University",
-    publication: "CVPR'25",
+    publication: "CVPR 2025",
     publishedAt: "2025-03",
     Tag: [],
     link: "https://www.computer.org/csdl/proceedings-article/cvpr/2025/436400ae927/299buyfnYBy"
@@ -426,7 +426,7 @@ export const backdoorAttacks = [
   {
     title: "Natural Reflection Backdoor Attack on Vision Language Model for Autonomous Driving",
     institution: "Iowa State University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-05",
     Tag: [],
     link: "https://arxiv.org/abs/2505.06413"
@@ -434,7 +434,7 @@ export const backdoorAttacks = [
   {
     title: "Backdoor Attack on Vision Language Models with Stealthy Semantic Manipulation",
     institution: "Southern University of Science and Technology",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-06",
     Tag: [],
     link: "https://arxiv.org/abs/2506.07214"
@@ -442,7 +442,7 @@ export const backdoorAttacks = [
   {
     title: "Shadow-Activated Backdoor Attacks on Multimodal Large Language Models",
     institution: "The Pennsylvania State University",
-    publication: "ACL'25",
+    publication: "ACL 2025",
     publishedAt: "2025-07",
     Tag: [],
     link: "https://aclanthology.org/2025.findings-acl.248/"
@@ -450,7 +450,7 @@ export const backdoorAttacks = [
   {
     title: "IAG: Input-aware Backdoor Attack on VLMs for Visual Grounding",
     institution: "Shanghai Jiao Tong University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-08",
     Tag: [],
     link: "https://arxiv.org/abs/2508.09456"
@@ -458,7 +458,7 @@ export const backdoorAttacks = [
   {
     title: "TokenSwap: Backdoor Attack on the Compositional Understanding of Large Vision-Language Models",
     institution: "Southeast University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-09",
     Tag: [],
     link: "https://arxiv.org/abs/2509.24566"
@@ -466,7 +466,7 @@ export const backdoorAttacks = [
   {
     title: "MTAttack: Multi-Target Backdoor Attacks against Large Vision-LanguageModels",
     institution: "Beihang University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-11",
     Tag: [],
     link: "https://arxiv.org/abs/2511.10098"
@@ -474,7 +474,7 @@ export const backdoorAttacks = [
   {
     title: "BackdoorVLM: A Benchmark for Backdoor Attacks on Vision-Language Models",
     institution: "Fudan University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-11",
     Tag: [],
     link: "https://arxiv.org/abs/2511.18921"
@@ -482,7 +482,7 @@ export const backdoorAttacks = [
   {
     title: "BadVLA: Towards Backdoor Attacks on Vision-Language-Action Models via Objective-Decoupled Optimization",
     institution: "University of Texas at Arlington",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-05",
     Tag: [],
     link: "https://arxiv.org/abs/2505.16640"
@@ -490,7 +490,7 @@ export const backdoorAttacks = [
   {
     title: "TabVLA: Targeted Backdoor Attacks on Vision-Language-Action Models",
     institution: "Fudan University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-10",
     Tag: [],
     link: "https://arxiv.org/abs/2510.10932"
@@ -498,7 +498,7 @@ export const backdoorAttacks = [
   {
     title: "AttackVLA: Benchmarking Adversarial and Backdoor Attacks on Vision-Language-Action Models",
     institution: "Fudan University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-11",
     Tag: [],
     link: "https://arxiv.org/abs/2511.12149"
@@ -506,7 +506,7 @@ export const backdoorAttacks = [
   {
     title: "State Backdoor: Towards Stealthy Real-world Poisoning Attack on Vision-Language-Action Model in State Space",
     institution: "University of Electronic Science and Technology of China",
-    publication: "arXiv",
+    publication: "arXiv 2026",
     publishedAt: "2026-01",
     Tag: [],
     link: "https://www.arxiv.org/abs/2601.04266"
@@ -514,7 +514,7 @@ export const backdoorAttacks = [
   {
     title: "Inject Once Survive Later: Backdooring Vision-Language-Action Models to Persist Through Downstream Fine-tuning",
     institution: "Harbin Institute of Technology, Shenzhen",
-    publication: "arXiv",
+    publication: "arXiv 2026",
     publishedAt: "2026-02",
     Tag: [],
     link: "https://arxiv.org/pdf/2602.00500"
@@ -522,7 +522,7 @@ export const backdoorAttacks = [
   {
     title: "Hidden Ghost Hand: Unveiling Backdoor Vulnerabilities in MLLM-Powered Mobile GUI Agents",
     institution: "Shanghai Jiao Tong University",
-    publication: "EMNLP’25",
+    publication: "EMNLP 2025",
     publishedAt: "2025-05",
     Tag: [],
     link: "https://aclanthology.org/2025.findings-emnlp.411/"
@@ -530,7 +530,7 @@ export const backdoorAttacks = [
   {
     title: "Poison Once, Control Anywhere: Clean-Text Visual Backdoors in VLM-based Mobile Agents",
     institution: "National University of Defense Technology",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-06",
     Tag: [],
     link: "https://arxiv.org/abs/2506.13205"
@@ -538,7 +538,7 @@ export const backdoorAttacks = [
   {
     title: "VisualTrap: A Stealthy Backdoor Attack on GUI Agents via Visual Grounding Manipulation",
     institution: "University of Science and Technology of China",
-    publication: "COLM‘25",
+    publication: "COLM 2025",
     publishedAt: "2025-07",
     Tag: [],
     link: "https://openreview.net/forum?id=7HPuAkgdVm#discussion"
@@ -546,7 +546,7 @@ export const backdoorAttacks = [
   {
     title: "Realistic Environmental Injection Attacks on GUI Agents",
     institution: "Tsinghua University",
-    publication: "arXiv",
+    publication: "arXiv 2025",
     publishedAt: "2025-09",
     Tag: [],
     link: "https://arxiv.org/abs/2509.11250"

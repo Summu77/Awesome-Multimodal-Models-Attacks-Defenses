@@ -122,7 +122,7 @@ link: "https://arxiv.org/abs/2602.19418"
 {
   title: "Break the Visual Perception: Adversarial Attacks Targeting Encoded Visual Tokens of Large Vision-Language Models",
   institutions: ["University of Science and Technology of China"],
-  publication: "MM 2024",
+  publication: "ACM MM 2024",
   publishedAt: "2024-10",
   Tag: [],
   link: "https://arxiv.org/abs/2410.06699"
@@ -162,7 +162,7 @@ link: "https://arxiv.org/abs/2602.19418"
 {
   title: "A unified understanding of adversarial vulnerability regarding unimodal models and vision-language pre-training models",
   institutions: ["Northwestern Polytechnical University"],
-  publication: "MM 2024",
+  publication: "ACM MM 2024",
   publishedAt: "2024-07",
   Tag: ["VLP"],
   link: "https://dl.acm.org/doi/abs/10.1145/3664647.3681184"
@@ -202,7 +202,7 @@ link: "https://arxiv.org/abs/2602.19418"
 {
   title: "Towards adversarial attack on vision-language pre-training models",
   institutions: ["Beijing Jiaotong University"],
-  publication: "MM 2022",
+  publication: "ACM MM 2022",
   publishedAt: "2022-10",
   Tag: ["VLP"],
   link: "https://dl.acm.org/doi/abs/10.1145/3503161.3547801"
