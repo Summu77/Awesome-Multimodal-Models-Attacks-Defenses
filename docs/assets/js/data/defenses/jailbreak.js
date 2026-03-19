@@ -6,5 +6,13 @@ export const jailbreakDefenses = [
     publishedAt: "2024-03",
     Tag: [],
     link: "https://arxiv.org/abs/2403.09513"
-  }
+  },
+  {
+    title: "Unraveling and Mitigating Safety Alignment Degradation of Vision-Language Models",
+    institutions: ["University of California, Davis","AWS AI Labs"],
+    publication: "ACL 2025",
+    publishedAt: "2024-10",
+    Tag: [],
+    link: "https://arxiv.org/abs/2410.09047"
+  },
 ];
